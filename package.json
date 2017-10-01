@@ -9,7 +9,8 @@
     "url": "https://github.com/amit-upadhyay-IT"
   },
   "files": [
-    "lib"
+    "./cli.js",
+    "./index.js"
   ],
   "main": "lib/index.js",
   "keywords": [
@@ -43,5 +44,11 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "bin": {
+    "zipme": "cli.js"
+  },
+  "dependencies": {
+    "meow": "^3.7.0"
+  }
 }
