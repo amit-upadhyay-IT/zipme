@@ -3,6 +3,8 @@
 var zlib = require('zlib');
 var fs = require('fs');
 
+var zip = zlib.createGzip();
+var unzip = zlib.createGunzip();
 
 module.exports = function(operation, filePath) {
 
@@ -15,7 +17,7 @@ module.exports = function(operation, filePath) {
             var r = fs.createReadStream(filePath);
             var w = fs.createWriteStream(filePath+'.zipme');
 
-            r.pipe(zlib.createGzip()).pipe(w);
+            r.pipe(zip).pipe(w);
             r.on('end', function() {
                 console.log('\nFile compressed successfully');
             });
@@ -38,7 +40,7 @@ module.exports = function(operation, filePath) {
             var properFileName = filePath.replace('.zipme', '');
             var w = fs.createWriteStream(properFileName);
 
-            r.pipe(zlib.createGzip()).pipe(w);
+            r.pipe(unzip).pipe(w);
             r.on('end', function() {
                 console.log('\nFile de-compressed successfully');
             });
