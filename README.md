@@ -31,11 +31,12 @@ $ npm install --g zipme
 ## Usage
 
 ```
-$ zipme z filename // this will compress the file abc.webm
+$ zipme z filename // this will compress the file 'filename'
 
-$ zipme uz filename // this will decompress the file abc.webm.zipme
+$ zipme uz filename // this will decompress the file 'filename'
 
 ```
+**NOTE**: Once the file gets compressed it's extension is changed to `.zipme`.
 
 ## Documentation
 
