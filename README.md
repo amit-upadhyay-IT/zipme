@@ -1,19 +1,42 @@
 # zipme [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> A command line utility to compress any type of file.
+> A command line utility to compress and decompress any type of file.
+
+Are you running out of space? Don't worry, you can save space by using unzip.
 
 ## Installation
 
 ```sh
-$ npm install --save zipme
+$ npm install --g zipme
 ```
+
+## Options
+`zipme --help`
+
+##### Example
+      aupadhyay@localhost zipme$ zipme --help
+
+      A command line utility to compress and de-compress any type of file.
+
+      Usage
+          zipme z <file_path> // this will zip the file
+          zipme uz <file_path> // this will unzip the file
+      Example
+          zipme /home/aupadhyay/Videos/amit.mp4
+
+      Developer
+          Amit Upadhyay (github.com/amit-upadhyay-it)
+
+
 
 ## Usage
 
-```js
-const zipme = require('zipme');
-
-zipme('Rainbow');
 ```
+$ zipme z abc.webm // this will compress the file abc.webm
+
+$ zipme uz abc.webm.zipme // this will decompress the file abc.webm.zipme
+
+```
+
 ## License
 
 Apache-2.0 © [Amit Upadhyay](https://github.com/amit-upadhyay-IT)
