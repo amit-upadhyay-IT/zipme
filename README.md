@@ -1,7 +1,7 @@
 # zipme [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > A command line utility to compress and decompress any type of file.
 
-Are you running out of space? Don't worry, you can save space by using unzip.
+Are you running out of space? Don't worry, you can save space by using zipme.
 
 ## Installation
 
@@ -31,11 +31,18 @@ $ npm install --g zipme
 ## Usage
 
 ```
-$ zipme z abc.webm // this will compress the file abc.webm
+$ zipme z filename // this will compress the file abc.webm
 
-$ zipme uz abc.webm.zipme // this will decompress the file abc.webm.zipme
+$ zipme uz filename // this will decompress the file abc.webm.zipme
 
 ```
+
+## Documentation
+
+It's easy to use.
+
+- To compress any file, just write `zipme z filename`, on the command line.
+- To decompress the file, write `zipme uz filename`, on the command line.
 
 ## License
 
