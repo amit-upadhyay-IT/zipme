@@ -1,6 +1,6 @@
 {
   "name": "zipme",
-  "version": "0.0.0",
+  "version": "1.1.2",
   "description": "A command line utility to compress any type of file.",
   "homepage": "https://github.com/amit-upadhyay-IT/zipme",
   "author": {
