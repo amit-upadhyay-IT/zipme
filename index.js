@@ -14,6 +14,7 @@ module.exports = function(operation, filePath) {
         // need to do zipping of the filePath
         if (fs.existsSync(filePath))
         {
+            console.log('Compressing the file...');
             var r = fs.createReadStream(filePath);
             var w = fs.createWriteStream(filePath+'.zipme');
 
@@ -36,6 +37,7 @@ module.exports = function(operation, filePath) {
         // need to do unzipping of the filePath
         if (fs.existsSync(filePath))
         {
+            console.log('Decompressing the file...');
             var r = fs.createReadStream(filePath);
             var properFileName = filePath.replace('.zipme', '');
             var w = fs.createWriteStream(properFileName);
